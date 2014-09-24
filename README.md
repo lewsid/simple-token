@@ -17,14 +17,12 @@ Usage
 
     ```php
     $key = SimpleToken::generateKey();
-
     ```
 
 2. Generate a token to be passed from one end to the other. This token will be good for until the end of the current day. There's a better way to do this, and I'll certainly come back and make it so, someday.
 
     ```php
     $token = SimpleToken::generateToken($key, $content);
-
     ```
 
 3. Verify the authenticity of the transaction.
@@ -38,7 +36,6 @@ Usage
 	{
 		echo 'Invalid';
 	}
-
     ```
 
 License
